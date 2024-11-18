@@ -1,0 +1,9 @@
+#!/bin/bash
+if pgrep -x "rofi" > /dev/null; then
+    # App is running, close it
+    pkill -x "rofi"
+else
+    # App is not running, open it
+    rofi -show drun
+fi
+

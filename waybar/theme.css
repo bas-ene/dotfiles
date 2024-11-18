@@ -1,0 +1,48 @@
+/* 
+bg - background
+fg - foreground
+act - active
+hvr - hover
+*/
+
+/* Main Colors */
+@define-color background #121212;
+@define-color foreground #c4c504;
+
+/* Workspace Button Colors */
+@define-color active-bg #ff6600;
+@define-color active-fg #ffffff;
+@define-color hover-bg #45475a;
+@define-color hover-fg #cdd6f4;
+
+/* Wlogout Colors */
+/* @define-color bar-bg #11111b; */
+/* @define-color main-bg #11111b; */
+/* @define-color main-fg #cdd6f4; */
+/* @define-color wb-act-bg #9399b2; */
+/* @define-color wb-act-fg #11111b; */
+/* @define-color wb-hvr-bg #6c7086; */
+/* @define-color wb-hvr-fg #11111b; */
+
+/* kitty theme colors */
+/* @define-color background #000000; */
+/* @define-color foreground #ffffff; */
+/* @define-color cursor #ffffff; */
+/* @define-color selection_background #b4d5ff; */
+/* @define-color color0 #868686; */
+/* @define-color color8 #121212; */
+/* @define-color color1 #ff6600; */
+/* @define-color color9 #ff0000; */
+/* @define-color color2 #ccff04; */
+/* @define-color color10 #00ff00; */
+/* @define-color color3 #ffcc00; */
+/* @define-color color11 #ffff00; */
+/* @define-color color4 #44b3cc; */
+/* @define-color color12 #0000ff; */
+/* @define-color color5 #9933cc; */
+/* @define-color color13 #ff00ff; */
+/* @define-color color6 #44b3cc; */
+/* @define-color color14 #00ffff; */
+/* @define-color color7 #f4f4f4; */
+/* @define-color color15 #e5e5e5; */
+/* @define-color selection_foreground #000000; */
