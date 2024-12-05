@@ -130,7 +130,8 @@ require('lazy').setup({
         changedelete = { text = '~' },
       },
       on_attach = function(bufnr)
-        vim.keymap.set('n', '<leader>hp', require('gitsigns').preview_hunk, { buffer = bufnr, desc = 'Preview git hunk' })
+        vim.keymap.set('n', '<leader>hp', require('gitsigns').preview_hunk,
+          { buffer = bufnr, desc = 'Preview git hunk' })
 
         -- don't override the built-in and fugitive keymaps
         local gs = package.loaded.gitsigns
@@ -157,10 +158,6 @@ require('lazy').setup({
   },
 
   {
-    -- Theme inspired by Atom
-    --'navarasu/onedark.nvim',
-    -- 'metalelf0/base16-black-metal-scheme',
-    -- 'NLKNguyen/papercolor-theme',
     'afair/vibrantink2',
     priority = 1000,
     config = function()
@@ -209,7 +206,7 @@ require('lazy').setup({
     'nvim-treesitter/nvim-treesitter',
     dependencies = {
       highlight = {
-        enable = true,                             -- enable Treesitter highlighting
+        enable = true,                         -- enable Treesitter highlighting
         additional_vim_regex_highlighting = false, -- Disable Vim's regex-based highlighting
       },
       'nvim-treesitter/nvim-treesitter-textobjects',
@@ -221,7 +218,7 @@ require('lazy').setup({
   --       These are some example plugins that I've included in the kickstart repository.
   --       Uncomment any of the lines below to enable them.
   require 'kickstart.plugins.autoformat',
-  -- require 'kickstart.plugins.debug',
+  require 'kickstart.plugins.debug',
 
   -- NOTE: The import below can automatically add your own plugins, configuration, etc from `lua/custom/plugins/*.lua`
   --    You can use this folder to prevent any conflicts with this init.lua if you're interested in keeping
@@ -272,8 +269,7 @@ vim.o.timeoutlen = 300
 -- Set completeopt to have a better completion experience
 vim.o.completeopt = 'menuone,noselect'
 
-
-
+vim.o.relativenumber = true
 -- Lua function to toggle between absolute and relative line numbers
 function toggle_line_numbers()
   if vim.o.number == true and vim.o.relativenumber == true then
@@ -648,7 +644,6 @@ vim.opt.shiftwidth = 4
 vim.textwidth = 100
 vim.o.pumheight = 8
 vim.o.pumwidth = 80
-vim.o.relativenumber = true
 --VIMTEX MAYBE
 vim.cmd("filetype plugin on")
 vim.cmd("filetype indent on")
